@@ -1,7 +1,7 @@
 class bilpecahan:
   def __init__(self, pembilang, penyebut):
-      self.pembilang = pembilang
-      self.penyebut = penyebut
+    self.pembilang = pembilang
+    self.penyebut = penyebut
   def dikalikan(self,bilpecahan2):
     hasilpembilang=self.pembilang*bilpecahan2.pembilang
     hasilpenyebut = self.penyebut*bilpecahan2.penyebut
