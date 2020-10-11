@@ -7,6 +7,8 @@ class bilpecahan:
     hasilpenyebut = self.penyebut*bilpecahan2.penyebut
     hasil = bilpecahan(hasilpembilang,hasilpenyebut)
     return hasil
+  def ditambahkan(self,bilpecahan3):
+    
     
  peca= bilpecahan(4 2)
  pecb = bilpecahan(2 3)
