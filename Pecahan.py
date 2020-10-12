@@ -8,9 +8,9 @@ class bilpecahan:
     hasil = bilpecahan(hasilpembilang,hasilpenyebut)
     return hasil
     
- peca= bilpecahan(4,2)
- pecb = bilpecahan(2,3)
- pecc = peca.dikalikan(pecb)
- pecd = pecb.dikalikan(peca)
- print(str(pecc.pembilang)+'/'+str(pecc.penyebut))
- print(str(pecd.pembilang)+'/'+str(pecd.penyebut))
+peca= bilpecahan(4,2)
+pecb = bilpecahan(2,3)
+pecc = peca.dikalikan(pecb)
+pecd = pecb.dikalikan(peca)
+print(str(pecc.pembilang)+'/'+str(pecc.penyebut))
+print(str(pecd.pembilang)+'/'+str(pecd.penyebut))
