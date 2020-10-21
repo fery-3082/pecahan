@@ -36,7 +36,7 @@ def mobil_sedan():
     print("Apakah Anda ingin mengubah warna mobil Anda?")
     print("Yes/No")
     pilihan = input()
-    if pilihan == "Yes":
+    if pilihan.lower() == "Yes":
         sedan.warna = input("Silakan ubah warna sedan Anda: ")
         print("Warna berhasil diubah menjadi " + sedan.warna)
         print(sedan.__dict__)
@@ -47,7 +47,7 @@ def mobil_sedan():
     print("Apakah Anda ingin menjual mobil Anda?")
     print("Yes/No")
     pilihan2 = input()
-    if pilihan2 == "Yes":
+    if pilihan2.lower() == "Yes":
         sedan.pemilik = input("Silakan jual mobil sedan Anda kepada: ")
         print("Anda telah menjual mobil sedan kepada " + sedan.pemilik)
         print(sedan.__dict__)
@@ -80,7 +80,7 @@ def ikan():
     print("Apakah Anda ingin menjual ikan?")
     print("Yes/No")
     pilihan = input()
-    if pilihan == "Yes":
+    if pilihan.lower() == "Yes":
         ikan1.pemilik = input("Silakan jual ikan kepada: ")
         print("Anda telah menjual ikan kepada " + ikan1.pemilik)
         print(ikan1.__dict__)
@@ -113,7 +113,7 @@ def burung():
     print("Apakah Anda ingin menjual burung Anda?")
     print("Yes/No")
     pilihan = input()
-    if pilihan == "Yes":
+    if pilihan.lower() == "Yes":
         burung1.Pemilik = input("Silakan jual burung kepada: ")
         print("Anda telah menjual burung kepada: ")
         print(burung1.__dict__)
@@ -171,7 +171,7 @@ def komputer():
     print("Apakah Anda ingin mengganti sistem operasi pada komputer Anda?")
     print("Yes/No")
     pilihan1 = input()
-    if pilihan1 == "Yes":
+    if pilihan1.lower() == "Yes":
         komputer.sistem_operasi = input("Silakan pilih sistem operasi baru: ")
         print("Anda berhasil mengganti sistem operasi menjadi "+komputer.Sistem_Operasi)
         print(komputer.__dict__)
@@ -182,7 +182,7 @@ def komputer():
     print("Apakah Anda ingin mengganti RAM?")
     print("Yes/No")
     pilihan2 = input()
-    if pilihan2 == "Yes":
+    if pilihan2.lower() == "Yes":
         komputer.ram = input("Silakan pilih RAM yang baru: ")
         print("Anda telah berhasil mengganti RAM menjadi "+ komputer.ram)
         print(komputer.__dict__)
@@ -193,7 +193,7 @@ def komputer():
     print("Apakah Anda ingin menjual komputer Anda?")
     print("Yes/No")
     pilihan3 = input()
-    if pilihan3 == "Yes":
+    if pilihan3.lower() == "Yes":
         komputer.pemilik = input("Anda akan menjual komputer kepada: ")
         print("Anda telah menjual komputer Anda kepada " + komputer.pemilik)
         print(komputer.__dict__)
@@ -201,7 +201,7 @@ def komputer():
         print(komputer.__dict__)
     return
 
-print("Pilih salah satu: \n 1. Mobil Sedan \n 2. Ikan \n 3. Burung \n 4. Komputer")
+print("Pilih salah satu: \n [1]. Mobil Sedan \n [2]. Ikan \n [3]. Burung \n [4]. Komputer")
 n = input()
 if n == "1":
     mobil_sedan()
